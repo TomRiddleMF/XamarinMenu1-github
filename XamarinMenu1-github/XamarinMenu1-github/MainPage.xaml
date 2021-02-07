@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="Black" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinMenu1_github.MainPage">
+    <Frame Margin="20,20,20,20" BackgroundColor="White" CornerRadius="15">
+    <StackLayout>
+        
+        <Image Source="iconProfile.png" HorizontalOptions="Center" HeightRequest="80" Margin="0,100,0,10"/>
+
+        <Frame HasShadow="True" HeightRequest="40" BackgroundColor="White" Padding="3" Margin="20,50,20,5" CornerRadius="10">
+            <Frame HasShadow="True" BackgroundColor="White" Padding="1" CornerRadius="10">
+                <Entry PlaceholderColor="Black" Placeholder="User" BackgroundColor="Transparent" x:Name="userEntry" HorizontalOptions="FillAndExpand" TextColor="Black"  FontSize="10"  />
+            </Frame>
+        </Frame>
+        <Frame HasShadow="True" HeightRequest="40" BackgroundColor="White" Padding="3" Margin="20,2,20,5" CornerRadius="10">
+            <Frame HasShadow="True" BackgroundColor="White" Padding="1" CornerRadius="10">
+                <Entry PlaceholderColor="Black" Placeholder="Password" BackgroundColor="Transparent" x:Name="passEntry" HorizontalOptions="FillAndExpand" TextColor="Black"  FontSize="10"  />
+            </Frame>
+        </Frame>
+        <Frame HasShadow="True" x:Name="rePassword" HeightRequest="40" BackgroundColor="White" Padding="3" Margin="20,2,20,5" CornerRadius="10" IsVisible="false">
+            <Frame HasShadow="True" BackgroundColor="White" Padding="1" CornerRadius="10">
+                <Entry PlaceholderColor="Black" Placeholder="Repeat Password" BackgroundColor="Transparent" x:Name="repassEntry" HorizontalOptions="FillAndExpand" TextColor="Black"  FontSize="10"  />
+            </Frame>
+        </Frame>
+        <Button x:Name="btnLogin" BackgroundColor="Black" CornerRadius="10" TextColor="White" Text="LOGIN" Margin="50,10,50,0" BorderColor="#3C3C3C">
+            
+        </Button>
+        <Button BackgroundColor="Transparent" x:Name="btnRegister" Clicked="btnRegister_Clicked"  TextColor="Black" FontSize="10" Text="REGISTER" HorizontalOptions="Center" HeightRequest="50" Padding="1"/>
+        
+    </StackLayout>
+    </Frame>
+</ContentPage>
